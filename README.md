@@ -1,5 +1,4 @@
 # OpenWeather-API
 OpenWeather-API Example
 
-
-https://github.com/r00tmebaby/OpenWeather-API/blob/main/Readme.pdf
+https://r00tmebaby.github.io//OpenWeather-API/blob/main/Readme.pdf
