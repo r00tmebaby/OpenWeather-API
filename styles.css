@@ -1,0 +1,125 @@
+:root {
+    --text-shadow: 1px 1px #000;
+    --padding: 1vh 1vh;
+}
+body{
+    background-image:url("media/background.jpg");
+    background-size: cover;
+}
+h2{
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    font-family:cursive;
+    color:#CEEAFF;
+    background:rgba(206, 234, 255, 0.6);
+    font-size: calc(10pt + 6 * ((100vw - 100px) / 300));
+    text-shadow:var(--text-shadow);
+}
+#weather, #city-weather{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+}
+#city-weather table{
+    background:rgba(0, 0, 0, 0.5);
+    color:#CEEAFF;
+    text-shadow:var(--text-shadow);
+}
+.date{
+    font-style: italic;
+}
+.weather-image{
+    width:20%;
+    float:left;
+}
+.weather-condition {
+    text-transform:capitalize !important;
+    display:inline;
+    width:100%;
+    float:right;
+    text-align:right;
+    font-style: italic;
+    font-weight: 100;
+    font-size:1.5vh;
+}
+.city-name, .city-temp{
+    font-weight:bold;
+    color:rgb(233, 163, 33);
+    font-family:cursive;
+    text-shadow: var(--text-shadow);
+}
+.temp{
+    float:right;
+    font-size: 5vh;
+}
+.city-name, .city-date{
+    font-size:2vh;
+    top:0;
+}
+.city-date{
+    float:right;
+}
+.city-temp{
+    display:inline-block;
+    width:90%;
+    margin-top:2vh;
+    font-size:4vh;
+    border-width:1px;
+    font-style: italic;  
+    box-shadow: 10px 5px 1.5rem rgba(0,0,0,0.5);
+    padding:var(--padding);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 5px solid #CEEAFF;
+    border-bottom: 5px solid #CEEAFF;
+    box-shadow: 2px 2px;
+    -webkit-box-shadow: 1px -3px 13px -1px #CEEAFF; 
+    box-shadow: 1px -3px 13px -1px #CEEAFF;
+}
+.city-temp span{
+    font-style:inherit;
+    font-size: 3vh;
+}
+
+.wind{
+    display: inline-block;
+    margin:0 3% 0 3%;
+    filter:invert(1) brightness(1.4) contrast(3) drop-shadow(0px 2px #102435b2);
+    margin-right:10px;
+}
+table{
+    margin:var(--padding);
+    font-size:2.5vh;
+    width:80vw;
+    max-width: 400px;
+    border-collapse: separate;
+    padding:var(--padding);
+    box-shadow: 2px 2px;
+    -webkit-box-shadow: 1px -3px 13px -1px #000000; 
+    box-shadow: 1px -3px 13px -1px #000000;
+}
+td{
+    font-style: italic;
+    font-weight: 600;
+    border-bottom:1px solid rgba(136, 197, 232, 0.6);
+    padding: var(--padding);
+}
+select{
+    padding:2vh 3vh;
+    background-color: #CEEAFF;
+    width: 200px;
+}
+option[disabled]{
+    opacity:0.4;
+    color:rgba(59, 57, 57, 0.2);
+}
+.warning{
+    padding: var(--padding);
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.warning img{
+    margin-right:2%;
+}

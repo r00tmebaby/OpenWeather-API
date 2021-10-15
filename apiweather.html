@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+   <title>Weather Application - Task 1</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="apiweather.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<h2>Weather in the UK</h2>
+	<div id="weather">
+        <select id="country">
+            <option selected disabled>Select Country </option>
+            <option>England</option>
+            <option>Scotland</option>
+            <option>Wales</option>
+            <option>Northern Ireland</option>
+        </select>
+        <select id="cities">
+            <option selected disabled>Select a City</option>
+        </select>
+    </div>  
+    <div id="city-weather"></div> 
+</body>
+</html>
